@@ -1,11 +1,17 @@
 import random
 
-number_to_Guess=random.randint(1,100)
-while True:
+min = int(input("Enter the Lower Boundary for Your Guess Range : "))
+max = int(input("Enter the Upper Boundary for Your Guess Range : "))
+attemps = int(input("Enter the Number of Guess attemps : "))
+count=0
+while attemps!=count:
     try:
-        number = int(input("Guess the number between 1 and 100 : "))
-        if number <= 0 or number > 100:
-            print("Enter a valid Number")
+        number_to_Guess = random.randint(min,max)
+        count += 1
+        number=int(input(f"Enter a Number Between {min} and {max} : "))
+
+        if number>max or number<min:
+            print("Enter a number between the Range you Entered")
             continue
 
         if number > number_to_Guess:
@@ -18,3 +24,4 @@ while True:
     except ValueError:
         print("Please Enter a Valid Input")
 
+print(f"Total Attempts Reached and the Number to be guessed was:  {number_to_Guess}")
