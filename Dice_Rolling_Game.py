@@ -1,20 +1,32 @@
 import random
 
+count=0
 #Loop
 while True:
     # Ask: Roll the dice?
+
     choice = input("Roll the Dice? (y/n): ").lower()
+
     # If user enters y
     if choice == "y":
+        n = int(input("Enter the number of Dice to Roll : "))
+        count += 1
+        if n<=0:
+            print("Invalid Input!")
+            continue
+
+        dice = []
+
     #   Generate two random numbers
-        dice1=random.randint(1,6)
-        dice2=random.randint(1,6)
+        for i in range(n):
+            dice.append(random.randint(1,6))
     #   print them
-        print(f'{dice1},{dice2}')
+        print(tuple(dice))
+
     # If the user enters n
-    if choice == "n":
+    elif choice == "n":
     #   print thank you message
-        print("Thank you for playing")
+        print(f"Thank you for playing {count} times!")
     #   Terminate
         break
     # Else
