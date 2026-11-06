@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.system.id="pyproject.toml" type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/01_Python_Mini_Projects/Hangman">
+      <excludeFolder url="file://$MODULE_DIR$/01_Python_Mini_Projects/Hangman/.venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="~\Documents\01_University\06_ProgrammingL\Python\python-learning-journey\01_Python_Mini_Projects\Hangman\.venv" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
